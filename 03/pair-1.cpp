@@ -11,7 +11,6 @@ int main() {
     std::cout << x.first << std::endl;
     std::cout << x.second << std::endl;
 
-
     y = x;
 
     std::cout << y.first << std::endl;

@@ -14,7 +14,6 @@ int main() {
 
     std::pair<bool,int> p3(p2);
 
-
     //more complex pair
     std::pair< std::pair<float, int>, std::string >  p4 = { {20.5, -3}, "abc"};
     std::cout << p4.first.first << " " << p4.first.second << " " << p4.second << std::endl;
