@@ -4,13 +4,13 @@
 		{
 			"type": "shell",
 			"label": "C/C++: g++.exe build active file",
-			"command": "C:\\Program Files\\CodeBlocks\\MinGW\\bin\\g++.exe",
+			"command": "C:\\Program Files (x86)\\CodeBlocks\\MinGW\\bin\\g++.exe",
 			"args": [
 				"-g",
 				"${file}",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe",
-				"-std=c++17"
+				"--std=c++11"
 			],
 			"options": {
 				"cwd": "${workspaceFolder}"

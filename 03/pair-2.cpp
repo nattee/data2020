@@ -1,6 +1,10 @@
 #include <iostream>
 
 int main() {
+    //default constructor
+    std::pair<std::string,bool> p;
+    std::cout << "default [" << p.first << "] [" << p.second << "]" << std::endl;
+
     //initialize by { }
     std::pair<std::string,bool> p1 = { "somchai", true };
 
@@ -8,8 +12,10 @@ int main() {
     std::pair<bool,int> p2;
     p2 = std::make_pair(false,10);
 
+    std::pair<bool,int> p3(p2);
+
 
     //more complex pair
-    std::pair< std::pair<float, int>, std::string >  p3 = { {20.5, -3}, "abc"};
-    std::cout << p3.first.first << " " << p3.first.second << " " << p3.second << std::endl;
+    std::pair< std::pair<float, int>, std::string >  p4 = { {20.5, -3}, "abc"};
+    std::cout << p4.first.first << " " << p4.first.second << " " << p4.second << std::endl;
 }
