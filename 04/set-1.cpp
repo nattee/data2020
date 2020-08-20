@@ -12,5 +12,5 @@ int main() {
   s.erase(3);
 
   cout << "member of s: ";
-  for (auto x: s) cout << x << " ";
+  for (auto it = s.begin(); it != s.end(); it++) cout << x << " ";
 }
