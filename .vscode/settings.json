@@ -19,6 +19,8 @@
         "new": "cpp",
         "streambuf": "cpp",
         "type_traits": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "chrono": "cpp",
+        "random": "cpp"
     }
 }

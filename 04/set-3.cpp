@@ -27,7 +27,7 @@ int main() {
   int count = 0;
   for (int round = 0;round < repeat; round++) {
     int value = generator();
-    if (find(v.begin(),v.end(),987321) != v.end()) count++;
+    if (find(v.begin(),v.end(),value) != v.end()) count++;
   }
   auto stop = std::chrono::duration_cast< milliseconds >( system_clock::now().time_since_epoch() );
   cout << "Vector find of " << n << " elements use " << (stop.count() - start.count()) << " ms " << endl;

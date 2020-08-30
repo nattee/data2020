@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-  set<int> s = {1,2,3,4,1,2,4};
+  set<int> s = {4,1,3,2,1,1,3,4};
 
   cout << "Size of s is " << s.size() << endl;
 
@@ -12,5 +12,5 @@ int main() {
   s.erase(3);
 
   cout << "member of s: ";
-  for (auto it = s.begin(); it != s.end(); it++) cout << x << " ";
+  for (auto it = s.begin(); it != s.end(); it++) cout << *it << " ";
 }
