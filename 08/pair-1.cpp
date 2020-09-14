@@ -7,31 +7,23 @@ namespace CP {
     public:
       T1 first;
       T2 second;
-      pair(T1 a,T2 b) : first(a), second(b) {};
   };
 }
 
 int main() {
-  CP::pair<int,string> p1(10,"a"),q1(20,"b");
-  p1.first = 10;
-  p1.second = "yes";
-  p1 = q1;
-  cout << q1.first << endl;
-  CP::pair<int,string> p2(p1);
-  cout << p2.first << endl;
-  p2 = q1;
-  cout << p2.first << endl;
-  CP::pair<int,int> x(0,0);
-  x.first = 1;
-  x = {-1,-2};
-  cout << x.first << endl;
+  CP::pair<int,string> p1, p2;  //default ctor
+  p1.first = 20; p1.second = "somchai";
+  CP::pair<int,string> a(p1);   //copy ctor
+  p2 = p1;
+
+  cout << p2.first << "," << p2.second << endl;
 
   /*
-  if (p1 == q1) { //won't compile
+  if (p1 == p2) { //won't compile
     cout << "yes" << endl;
   }
 
-  if (p1 < q1) { //won't compile
+  if (p1 < a) { //won't compile
     cout << "yes" << endl;
   }
   */
