@@ -11,9 +11,11 @@ namespace CP {
       T1 first;
       T2 second;
       
-      // custom constructor, using initializer list
+      // --------- constructor ------------ 
+      pair() : first(), second() { }
       pair(const T1 &a, const T2 &b) : first(a), second (b) { }
 
+      // --------- operator -------------
       bool operator==(const pair<T1,T2> &other) { 
         return (first == other.first && second == other.second);
       }
@@ -37,7 +39,9 @@ int main() {
   CP::pair<string, int> x(q);
   CP::pair<string, int> y = x;
 
-  //-- all below cannot be compiled --
-  //CP::pair<string, int> w;
-  //vector<CP::pair<int,int>> v(10);
+  //-- all below Okay now  --
+  CP::pair<int, int> w;
+  cout << w.first << ":" << w.second << endl;
+  vector<CP::pair<int,int>> v(10);
+  for (auto &x: v) { cout << x.first << endl;}
 }
