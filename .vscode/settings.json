@@ -21,6 +21,22 @@
         "type_traits": "cpp",
         "typeinfo": "cpp",
         "chrono": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "array": "cpp",
+        "cmath": "cpp",
+        "ctime": "cpp",
+        "deque": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "fstream": "cpp",
+        "functional": "cpp",
+        "numeric": "cpp",
+        "ratio": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp",
+        "iomanip": "cpp",
+        "string": "cpp"
     }
 }
