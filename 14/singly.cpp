@@ -54,6 +54,7 @@ class list
     
     void push_front(const T& e) {
       mFirst = new node(e,mFirst);
+      mSize++;
     }
 
     void print() {

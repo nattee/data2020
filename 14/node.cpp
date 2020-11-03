@@ -19,9 +19,10 @@ class node {
 }
 
 int main() {
-  CP::node *p;
-  p = new node(10,NULL);
-  q = new node(20,NULL);
+  CP::node<int> *p;
+  p = new CP::node<int>(10,NULL);
+  CP::node<int> *q;
+  q = new CP::node<int>(20,NULL);
   p->next = q;
-  q->next = new node(30,NULL);
+  q->next = new CP::node<int>(30,NULL);
 }
